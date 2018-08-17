@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript" src="jquery-2.1.0.js" ></script>
+		<script>
+			$.ajax({
+				type:"post",
+				url:"http://localhost:9096/xml/xml.php",
+				async:true,
+				dataType:"json",
+				success:function(data){
+					console.log(data)
+				}
+			});
+		</script>
+	</body>
+</html>
